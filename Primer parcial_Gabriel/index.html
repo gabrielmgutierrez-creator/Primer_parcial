@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cotización de Envío</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Calculadora de Cotización de Envío</h1>
+
+        <!-- FORMULARIO -->
+        <form id="formCotizacion">
+            <div class="campo">
+                <label for="nombre">Nombre del cliente:</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+                <small class="error" id="errorNombre"></small>
+            </div>
+
+            <div class="campo">
+                <label for="peso">Peso del paquete (kg):</label>
+                <input type="number" id="peso" step="0.01" placeholder="Ej: 2.5" required>
+                <small class="error" id="errorPeso"></small>
+            </div>
+
+            <div class="campo">
+                <label for="distancia">Distancia (km):</label>
+                <input type="number" id="distancia" step="1" placeholder="Ej: 150" required>
+                <small class="error" id="errorDistancia"></small>
+            </div>
+
+            <div class="campo">
+                <label for="descuento">Código de descuento (opcional):</label>
+                <input type="text" id="descuento" placeholder="Ej: DESCUENTO10">
+            </div>
+
+            <button type="submit" id="botonCalcular">Calcular Cotización</button>
+        </form>
+
+        <!-- RESULTADO -->
+        <div id="resultado" class="resultado" style="display: none;">
+            <h2> Resultado de la Cotización</h2>
+            <div id="contenidoResultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
