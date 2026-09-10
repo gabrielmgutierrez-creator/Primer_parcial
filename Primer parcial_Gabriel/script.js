@@ -88,7 +88,7 @@ function calcularCotizacion(event) {
 function mostrarResultado(datos) {
     contenidoResultado.innerHTML = `
         <div class="resultado-item">
-            <span class="label">👤 Cliente:</span>
+            <span class="label"> Cliente:</span>
             <span class="valor">${datos.nombre}</span>
         </div>
         <div class="resultado-item">
