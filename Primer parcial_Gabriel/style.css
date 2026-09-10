@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -93,7 +93,7 @@ button:active {
     transform: translateY(0);
 }
 
-/* Estilos para el resultado */
+
 .resultado {
     margin-top: 30px;
     padding: 25px;
@@ -150,7 +150,7 @@ button:active {
     }
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
     .container {
         padding: 20px;
